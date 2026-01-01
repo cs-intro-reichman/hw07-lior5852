@@ -11,7 +11,7 @@ public class IsSorted {
         if(i == a.length -1){
             return true;
         }
-        if( a.length-1 > a.length){
+        if( a[i+1] < a[i]){
             return false;
         }
         return isSorted(a, i + 1); 
